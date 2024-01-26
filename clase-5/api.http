@@ -1,34 +1,33 @@
 ### Recuperar todas las movies
 GET http://localhost:3000/movies
 
-### Recuperar una movie
-GET http://localhost:3000/movies/7a14c2f2-bb8d-11ee-9334-56fcedb1ac4a
-
 ### Recuperar movies por genero
 GET http://localhost:3000/movies?genre=action
+
+### Recuperar una movie
+GET http://localhost:3000/movies/9ca32cb8-bc56-11ee-bd8e-249faf90c52c
 
 ### Crear una movie POST
 POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title": "The Godfather",
-  "year": 1994,
-  "director": "Frank Darabont",
+  "title": "IRON MAN",
+  "year": 2008,
+  "director": "Marvel",
   "duration": 142,
   "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
-  "genre": ["Drama"]
+  "genre": ["Adventure", "Action", "Drama"]
 }
 
 ### Actualizar una movie PATCH
-PATCH http://localhost:3000/movies/790f41de-4f0d-4264-8db5-be439d7193f3
+PATCH http://localhost:3000/movies/7a14c400-bb8d-11ee-9334-56fcedb1ac4a
 Content-Type: application/json
 
 {
-  "title": "The Godfather MOD",
-  "rate": 9.3,
-  "id": "123"
+  "title": "The Godfather MOadasD",
+  "rate": 9.3
 }
 
 ### Eliminar una movie DELETE
-DELETE http://localhost:3000/movies/790f41de-4f0d-4264-8db5-be439d7193f3
+DELETE http://localhost:3000/movies/b09f9f34-bc66-11ee-bd8e-249faf90c52c
